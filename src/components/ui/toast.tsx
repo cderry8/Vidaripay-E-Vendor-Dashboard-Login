@@ -31,7 +31,7 @@ const Toast: React.FC<ToastProps> = ({ message, type, duration = 5000, onDismiss
       case "info":
         return "bg-blue-600 text-white border-blue-700";
       case "warning":
-        return "bg-yellow-600 text-white border-yellow-700";
+        return "bg-[#D86411] text-white border-yellow-700";
       default:
         return "bg-gray-600 text-white border-gray-700";
     }

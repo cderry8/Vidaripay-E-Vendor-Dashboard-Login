@@ -9,8 +9,8 @@ interface StatusProps {
 const Status: React.FC<StatusProps> = ({ status }) => {
 
   const statusColors = {
-    success: { text: "text-green-700", bg: "bg-green-200" }, 
-    pending: { text: "text-orange-600", bg: "bg-orange-200" }, 
+    success: { text: "text-[#41BC3F]", bg: "bg-green-200" }, 
+    pending: { text: "text-[#D86411]", bg: "bg-orange-200" }, 
     failed: { text: "text-red-800", bg: "bg-red-200" }, 
   };
 
