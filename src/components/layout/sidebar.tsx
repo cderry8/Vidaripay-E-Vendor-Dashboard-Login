@@ -55,7 +55,7 @@ const Sidebar: FC<SidebarProps> = ({ links, isMenuOpen, toggleMenu }) => {
           {isMenuOpen ? (
             <div className="transition-all duration-300 ease-in-out">
               <Image
-                src="/Vidaripay-logo-full.png"
+                src="https://i.postimg.cc/s1PPzM2d/vidaripay-logo-full.png"
                 alt="logo"
                 width={150}
                 height={50}
@@ -69,7 +69,7 @@ const Sidebar: FC<SidebarProps> = ({ links, isMenuOpen, toggleMenu }) => {
           ) : (
             <div className="transition-all duration-300 ease-in-out">
               <Image
-                src="/Vidaripay-logo-icon.png"
+                src="https://i.postimg.cc/Mcdkg6jD/Vidaripay-logo-icon.png"
                 alt="logo"
                 width={40}
                 height={30}
