@@ -1,15 +1,15 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion"; // Import Framer Motion
+import { motion } from "framer-motion";
 import LoginForm from "@/components/form/LoginForm";
 
 const LoginPage: React.FC = () => {
   return (
     <motion.div
-      className="flex justify-center items-center min-h-screen bg-gradient-to-b from-[#f7f9fb] to-[#f7f9fb]"
-      initial={{ opacity: 0, y: 50 }} // Initial position and opacity
-      animate={{ opacity: 1, y: 0 }} // Final position and opacity
-      transition={{ duration: 0.8, ease: "easeOut" }} // Added easing for a smoother feel
+      className="flex justify-center items-center min-h-screen bg-linear-to-b from-[#f7f9fb] to-[#f7f9fb]"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }} 
+      transition={{ duration: 0.8, ease: "easeOut" }} 
     >
       <motion.div
         className="w-full max-w-md p-6 bg-white rounded-lg shadow-xl z-50"

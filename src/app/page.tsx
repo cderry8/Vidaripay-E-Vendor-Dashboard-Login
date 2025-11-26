@@ -7,10 +7,13 @@ import { useRouter } from "next/navigation";
 export default function Home() {
   const router = useRouter();
 
-  // Navigate to the login page
+ 
   const handleLoginRedirect = () => {
     router.push("/login");
   };
+  const handleTransactionRedirect = ()=>{
+    router.push("/transaction")
+  }
 
   return (
     <motion.div 
@@ -44,6 +47,20 @@ export default function Home() {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <Button
+            text="Go to Transaction"
+            onClick={handleTransactionRedirect}
+            icon={<span className="text-lg">&#8594;</span>} 
+            iconPosition="right"
+            size="large"
+            className="w-full mb-4 bg-[#d6670e] hover:bg-[#c85b0b] transition duration-300"
+          />
+        </motion.div>
+         <motion.div
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }} 
+          transition={{ duration: 0.8, delay: 0.4 }}
+        >
+          <Button
             text="Go to Login"
             onClick={handleLoginRedirect}
             icon={<span className="text-lg">&#8594;</span>} 
@@ -52,6 +69,7 @@ export default function Home() {
             className="w-full bg-[#d6670e] hover:bg-[#c85b0b] transition duration-300"
           />
         </motion.div>
+        
       </div>
     </motion.div>
   );
