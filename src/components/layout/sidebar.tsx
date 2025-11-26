@@ -25,7 +25,7 @@ interface SidebarProps {
   toggleMenu: () => void; 
 }
 
-const Sidebar: FC<SidebarProps> = ({ links, user, isMenuOpen, toggleMenu }) => {
+const Sidebar: FC<SidebarProps> = ({ links, isMenuOpen, toggleMenu }) => {
   const [hasMounted, setHasMounted] = useState(false); 
   const pathname = usePathname(); 
 
@@ -60,6 +60,7 @@ const Sidebar: FC<SidebarProps> = ({ links, user, isMenuOpen, toggleMenu }) => {
                 width={150}
                 height={50}
                 className="w-full max-w-[150px]"
+                 priority
                 style={{
                   transition: 'opacity 0.3s ease, transform 0.3s ease',
                 }}
